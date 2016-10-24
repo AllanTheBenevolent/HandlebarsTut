@@ -1,0 +1,3 @@
+handlebars groceries.handlebars -f groceries.js
+
+Precompile groceries.handlebars to a JS file to be used in Tut7.

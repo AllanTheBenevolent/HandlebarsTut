@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ello  Handlebars</title>
+    <script src ="handlebars-v4.0.5.js"></script>
+</head>
+
+<body>
+    
+<div id ="allanData"></div>
+    
+<script type = "text/javascript">
+    
+    var myInfo = "<p>My name is {{name}} and I live at {{street}} in {{city}}, {{state}}</p>"; 
+    
+    var template = Handlebars.compile(myInfo);
+    
+    var data = template({name: "Allan", street:"Benevolent Street", city:"Pittsburgh", state:"PA"});
+    
+    document.getElementById("allanData").innerHTML += data;
+    </script>
+</body>    
+
+</html>
